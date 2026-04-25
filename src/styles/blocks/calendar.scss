@@ -41,10 +41,6 @@
     $day-index: list.index($days, $day);
     $empty-slots: $day-index - 1;
 
-    @if $day == 'sun'{
-      $empty-slots: 0;
-    }
-
     &--start-day-#{$day} {
       .calendar__day:first-child {
         margin-left: ($day-size + $gap) * $empty-slots;
